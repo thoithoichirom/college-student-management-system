@@ -20,7 +20,7 @@ async function seedAdmin() {
 
   console.log("Admin account ready.");
   console.log(`Email: ${email}`);
-  console.log(`Password: ${password}`);
+  // Issue #6 — password removed from logs (never log credentials in production)
   await pool.end();
 }
 
